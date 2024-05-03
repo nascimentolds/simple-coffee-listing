@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  /* colors */
+  --light: #fef7ee;
+  --success: #bee3cc;
+  --warning: #f6c768;
+  --danger: #ed735d;
+  --grey: #6f757c;
+  --dark: #1b1d1f;
+  --darker: #111315;
+
+  /* sizes */
+  --title: 2rem;
+  --body: 1rem;
+  --label: 0.875rem;
+  --price: 0.75rem;
+  --small: 0.625rem;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--darker);
+  color: var(--light);
+  font-size: var(--body);
+}
+
+.container {
+  width: 100vw;
+  heigth: 100vh;
+  background-image: url(./assets/images/bg-cafe.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 200%;
+  padding: 80px 25px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  heigth: 100%;
+  background-color: var(--dark);
+  background-image: url(./assets/images/vector.svg);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 160px 40px;
+  padding: 80px 25px;
+  border-radius: 10px;
+}
+
+.main--header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.main--title {
+  font-size: var(--title);
+}
+
+.main--text {
+  font-size: var(--text);
+  color: var(--grey);
+  font-weight: 500;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.filter--button {
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-family: "DM Sans", sans-serif;
+  font-size: var(--body);
+  font-weight: 500;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.filter--button:hover {
+  color: var(--grey);
+}
+
+.filter--button-active:hover {
+  color: var(--dark);
+}
+
+.filter--button-active {
+  background-color: var(--grey);
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 50px;
+}
+
+.card {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding-inline: 20px;
+  font-weight: 700;
+}
+
+.card--image-box {
+  position: relative;
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card--popular {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--warning);
+  padding: 5px;
+  border-radius: 50px;
+  color: var(--darker);
+  font-size: var(--small);
+  font-weight: 700;
+}
+
+.card--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  font-size: var(--label);
+}
+
+.card--price {
+  font-size: var(--price);
+  color: var(--dark);
+  background-color: var(--success);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.card--star {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.card--votes {
+  color: var(--grey);
+  width: 100%;
+}
+
+.card--sold {
+  color: var(--danger);
+  width: 100%;
+  text-align: right;
+}
+
+@media (min-width: 640px) {
+  .container {
+    background-size: 120%;
+    padding: 120px;
+  }
+
+  .main {
+    background-size: 70%;
+    background-position: 190px 30px;
+    padding: 100px 40px;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 160px 140px;
+  }
+
+  .main {
+    background-size: 35%;
+    background-position: 370px 40px;
+    padding: 100px 40px;
+  }
+
+  .main--header {
+    max-width: 500px;
+    gap: 10px;
+  }
+
+  .grid {
+    gap: 3px;
+  }
+
+  .card {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding: 160px 140px 80px;
+  }
+
+  .main {
+    background-size: 25%;
+    background-position: 500px 40px;
+    padding: 100px 40px 50px;
+  }
+}
