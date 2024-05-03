@@ -41,6 +41,8 @@ This challenge is great for working with Front-end libraries like React, Vue,...
 
 ## My process
 
+My experience doing the "Coffee Listing" challenge on DevChallenge.io was interesting and tough. I used ReactJS and Vite to build it, which made things easier. I had to learn how the data was organized and show it properly. Handling which coffees were available or not was tricky too, but I managed it using ReactJS's tools. In the end, I made a nice app where you can see different types of coffee easily.
+
 ### Built with
 
 - Semantic HTML5 markup
