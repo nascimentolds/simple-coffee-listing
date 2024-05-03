@@ -50,10 +50,10 @@ function App() {
             batches and shipped fresh weekly.
           </p>
           <div className="filter">
-            <button className={all ? "filter--button filter--button-active" : "filter--button"} onClick={handleAll}>
+            <button className={`filter--button ${all && "filter--button-active"}`} onClick={handleAll}>
               All Products
             </button>
-            <button className={notAll ? "filter--button filter--button-active" : "filter--button"} onClick={handleAvailable}>
+            <button className={`filter--button ${notAll && "filter--button-active"}`} onClick={handleAvailable}>
               Available Now
             </button>
           </div>
