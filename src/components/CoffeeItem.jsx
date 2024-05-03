@@ -28,7 +28,7 @@ export default function CoffeeItem(props) {
           <div className="card--points">{props.data.rating}</div>
         )}
         {props.data.votes != 0 ? (
-          <div className="card--votes">({props.data.votes})</div>
+          <div className="card--votes">({props.data.votes} votes)</div>
         ) : (
           ""
         )}
