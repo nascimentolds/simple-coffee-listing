@@ -37,7 +37,7 @@ This challenge is great for working with Front-end libraries like React, Vue,...
 
 ### Links
 
-- Live Site URL: [See my solution running](https://url-shortening-self-six.vercel.app/)
+- Live Site URL: [See my solution running](https://simple-coffee-listing-psi.vercel.app/)
 
 ## My process
 
